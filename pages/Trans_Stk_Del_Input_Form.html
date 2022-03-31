@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Stock Delivery Input Form</title>
+</head>
+
+<style>
+    .container {
+        margin: 20px;
+        width: fit-content;
+        height: auto;
+    }
+
+    .head {
+        color: gray
+    }
+
+    .borderTable {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .colCd {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cell-l {
+        width: 150px;
+        display: flex;
+        padding: 10px;
+        border-right: 1px solid gray;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #e6e6e6;
+    }
+
+    .cell-r {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .border-t {
+        border-top: 1px solid gray;
+    }
+
+    .proceed {
+        display: flex;
+        margin: 20px 0;
+        padding: 20px 0;
+        gap: 20px;
+        justify-content: center;
+        background: #e6e6e6;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .reqBtn {
+        height: fit-content;
+        background: transparent;
+        border-color: red;
+        color: red;
+        border-radius: 6px;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .radioRow {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .radio {
+        background: #D8E0F2;
+        width: 200px;
+        border-radius: 4px;
+        height: fit-content;
+    }
+
+    .searchInput {
+        padding: 5px;
+        border-radius: 4px;
+        width: 250px;
+        height: 18px;
+    }
+
+    .searchBtn {
+        padding: 5px;
+        background: transparent;
+        color: blue;
+        border: 1px solid blue;
+        border-bottom: 3px solid blue;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .input {
+        padding: 5px;
+        background: #D8E0F2;
+        height: 18px;
+        width: 250px;
+        border-radius: 4px;
+    }
+
+    .addressInput {
+        padding: 5px;
+        background: #D8E0F2;
+        height: 18px;
+        width: 500px;
+        border-radius: 4px;
+    }
+
+    .deptTitle {
+        width: 80px;
+    }
+
+    .notice {
+        font-size: 12px;
+        margin: 0;
+        color: gray;
+    }
+
+    .dropdown {
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 4px;
+    }
+
+    .accCol {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accountInput {
+        padding: 5px;
+        background: #D8E0F2;
+        height: 18px;
+        width: 350px;
+        border-radius: 4px;
+    }
+
+    .returnBtn {
+        padding: 10px 70px;
+        background: #fff;
+        border: 1px solid gray;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .proceedBtn {
+        padding: 10px 70px;
+        background: blue;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h4 class="head">ファンド移管先の証券会社を指定または入力し、 「次へ」 ボタンを押してください。</h4>
+
+        <table class="borderTable">
+            <tr class="row">
+                <td class="cell-l">
+                    <p class="title">証券会社</p>
+                    <button class="reqBtn">必須</button>
+                </td>
+                <td class="cell-r">
+                    <div>
+                        <div class="radioRow">
+                            <div class="radio">
+                                <input type="radio" id="radio1">
+                                <label for="radio1">SBI証券</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="radio2">
+                                <label for="radio2">マネックス証券</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="radio3">
+                                <label for="radio3">auカブコム証券</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="radio4">
+                                <label for="radio4">松井証券</label>
+                            </div>
+                        </div>
+
+                        <div class="radioRow">
+                            <div class="radio">
+                                <input type="radio" id="radio5">
+                                <label for="radio5">野村澄券</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="radio6">
+                                <label for="radio6">大和証券</label>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" id="radio7">
+                                <label for="radio7">SMBC日興証券</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="radio8">
+                                <label for="radio8">みずほ証券</label>
+                            </div>
+                        </div>
+                        <div class="radioRow">
+                            <div class="radio">
+                                <input type="radio" id="radio9">
+                                <label for="radio9">その他の証券会社</label>
+                            </div>
+                            <div>
+                                <input type="text" class="searchInput" name="" id="searchInput" placeholder="選択した証券会社">
+                                <button class="searchBtn">証券会社検索</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row border-t">
+                <td class="cell-l">
+                    <p class="title">部支店</p>
+                    <button class="reqBtn">必須</button>
+                </td>
+                <td class="cell-r">
+                    <div>
+                        <div class="radioRow">
+                            <p class="deptTitle">゙部支店名</p>
+                            <input type="text" class="input" name="" id="brandName" placeholder="゚部支店名">
+                        </div>
+                        <div class="radioRow">
+                            <p class="deptTitle">コード</p>
+                            <div class="colCd">
+                                <input type="text" class="input" name="" id="code" placeholder="コード">
+                                <p class="notice">半角英数3桁以内、 4桁以上の場合は3桁目までをご入力ください</p>
+                            </div>
+                        </div>
+                        <div class="radioRow">
+                            <p>所在地</p>
+                            <p>都道府県</p>
+                            <p class="dropdown">東京都</p>
+                            <p>市区町村</p>
+
+                            <div>
+                                <input type="text" class="addressInput" name="" id="" placeholder="例)港区南青山2-6-21">
+                                <p class="notice">町名・番地のご入力は省略可能です</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row border-t">
+                <td class="cell-l">
+                    <p class="title">口座番号</p>
+                    <button class="reqBtn">必須</button>
+                </td>
+                <td class="accCol">
+                    <input type="text" class="accountInput" name="" id="" placeholder="例) 1234567">
+                    <p class="notice">半角英数3桁以内、 4桁以上の場合は3桁目までをご入力ください</p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="proceed">
+            <button class="returnBtn">戻る</button>
+            <button class="proceedBtn">入力内容の確認へ進む</button>
+        </div>
+    </div>
+</body>
+
+</html>
