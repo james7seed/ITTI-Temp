@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+</head>
+
+<style>
+    body {
+        color: #323232;
+        font-weight: 400;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .text {
+        color: gray;
+        margin: 0;
+    }
+
+    table,
+    td,
+    th {
+        border: 1px solid #b1b1b1;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 4px;
+    }
+
+    th {
+        background: #F7F8F8;
+    }
+
+    th p,
+    td p {
+        padding: 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 10px;
+        gap: 20px
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flexQuant {
+        display: flex;
+        padding-right: 15px;
+    }
+
+    .flexQuant p {
+        padding: 15px 0;
+    }
+
+    .quant {
+        justify-content: flex-end;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .title {
+        width: 30%;
+        font-weight: bold;
+        color: gray;
+        background: #F7F8F8;
+        padding: 0;
+    }
+
+    .notice {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background: #fef3eb;
+        color: #f7ac71;
+        gap: 10px;
+    }
+
+    .iLogo {
+        display: flex;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        border: 2px solid #F9B179;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p class="text">投資信託移管を承ります。 内容を確認のうえ、「取引暗証番号を入力し、「株式移管」 ボタンを押してください</p>
+        <p class="text"> ゙移管手続き中はいずれの証券会社でも売却ができませんので、 ご了承ください。</p>
+
+        <h4>移管依頼銘柄</h4>
+
+        <table>
+            <tr>
+                <th>
+                    <p>ファンド名</p>
+                </th>
+                <th>
+                    <p>口座区分</p>
+                </th>
+                <th>
+                    <p>分配金</p>
+                </th>
+
+                <th>
+                    <p>移菅数量</p>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>楽天日本株4.3倍ブル</p>
+                </td>
+                <td>
+                    <p>特定口座</p>
+                </td>
+                <td>
+                    <p>再投資型</p>
+                </td>
+
+                <td>
+                    <p class="quant">7,663口</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>楽天・全米株式インデックス・ファンド(楽天・バンガード・ファンド(全米株式)</p>
+                </td>
+                <td>
+                    <p>特定口座</p>
+                </td>
+                <td>
+                    <p>再投資型</p>
+                </td>
+
+                <td>
+                    <p class="quant">100,949口</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>楽天日:本株4.3倍ブル</p>
+                </td>
+                <td>
+                    <p>特定口座</p>
+                </td>
+                <td>
+                    <p>再投資型</p>
+                </td>
+
+                <td>
+                    <p class="quant">99,904口</p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="grid">
+            <div>
+                <h4>移管先証券会社</h4>
+
+                <table>
+                    <tr>
+                        <td class="title">
+                            <p>証券会社名</p>
+                        </td>
+                        <td>
+                            <p>SBI証券</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>部支店名</p>
+                        </td>
+                        <td>
+                            <p>Z73</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>所在地</p>
+                        </td>
+                        <td>
+                            <p>東京都港区六本木1-6-1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>口座番号</p>
+                        </td>
+                        <td>
+                            <p>1125660xxx</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h4>移管銘柄数・ 手数料</h4>
+
+                <table>
+                    <tr>
+                        <td class="title">
+                            <p>移管銘柄数</p>
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <p>合計</p>
+                                <div class="flexQuant">
+                                    <p class="quant">3</p>
+                                    <p>銘柄</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>手数料</p>
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <p>合計</p>
+                                <div class="flexQuant">
+                                    <p class="quant">9,900</p>
+                                    <p>円</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>※ 投資信託の出庫は1銘柄あたり3,300円(税込)の手数料をいただきます。</p>
+            </div>
+            <div>
+                <h4>移管依頼者</h4>
+
+                <table>
+                    <tr>
+                        <td class="title">
+                            <p>依頼者名</p>
+                        </td>
+                        <td>
+                            <p>楽天 太郎</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>郵便番号</p>
+                        </td>
+                        <td>
+                            <p>107-0062</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">
+                            <p>ご自宅住所</p>
+                        </td>
+                        <td>
+                            <p>東京都港区南青山2-6-21</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="notice">
+            <div class="iLogo">i
+            </div>
+            <p class="noticeText">移管先証券会社の登録情報と相違がないかご確認ください。ご登録情報が一致しない場合、正しく移管手続きが行われません。</p>
+        </div>
+    </div>
+</body>
+
+</html>
