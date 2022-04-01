@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Stock Completion Page</title>
+</head>
+
+<style>
+    .completeNotice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #087409;
+        font-size: 22px;
+    }
+
+    .checkMark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        font-size: 80px;
+        border: 1px solid #087409;
+        border-radius: 50%;
+    }
+
+    .information {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        background: #ebf7fe;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 25px;
+        flex-direction: column;
+        color: #569abc;
+    }
+
+    .infoLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        font-size: 22px;
+        border: 3px solid #569abc;
+        border-radius: 50%;
+    }
+
+    .status {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .detail {
+        width: 100%;
+        background: #fff;
+        padding: 0 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="completeNotice">
+            <div class="checkMark">✓</div>
+            <p>移管依頼を受け付けました</p>
+        </div>
+        <div class="information">
+            <div class="status">
+                <div class="infoLogo">i</div>
+                <p>移管の手続き状況について</p>
+            </div>
+            <div class="detail">
+                <p>お手続きの進捗については当社からのメールまたはお知らせでご確認ください。詳しい確認方法はこちら</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
